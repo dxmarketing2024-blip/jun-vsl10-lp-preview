@@ -201,8 +201,32 @@ b,strong{font-weight:700;}
   padding:18px 12px;border-radius:8px;box-shadow:0 4px 0 var(--green-d);
   letter-spacing:.01em;
 }
-.cta-btn:active{transform:translateY(3px);box-shadow:0 1px 0 var(--green-d);}
+.cta-btn:active{animation:none;transform:scale(.98) translateY(2px);box-shadow:0 1px 0 var(--green-d);}
 .cta .note{text-align:center;font-size:12.5px;color:#777;margin:9px 0 0;line-height:1.6;}
+
+/* CTA attention pulse (zoom in / out) */
+@keyframes ctaPulse{
+  0%,100%{transform:scale(1);}
+  50%{transform:scale(1.05);}
+}
+@keyframes ctaPulseSoft{
+  0%,100%{transform:scale(1);}
+  50%{transform:scale(1.035);}
+}
+.cta-btn{
+  transform-origin:center;
+  animation:ctaPulse 1.15s ease-in-out infinite;
+  will-change:transform;
+}
+.sticky a{
+  transform-origin:center;
+  animation:ctaPulseSoft 1.35s ease-in-out infinite;
+  will-change:transform;
+}
+.sticky a:active{animation:none;transform:scale(.98) translateY(2px);box-shadow:0 1px 0 var(--green-d);}
+@media (prefers-reduced-motion: reduce){
+  .cta-btn,.sticky a{animation:none;}
+}
 
 /* voices */
 .voices-head{text-align:center;margin:8px 0 22px;}
