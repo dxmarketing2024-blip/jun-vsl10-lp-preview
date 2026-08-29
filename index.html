@@ -366,6 +366,27 @@ details .a::before{
   .final-title{font-size:20px;}
   .final-title .lg{font-size:27px;}
 }
+
+/* ============================================================
+   修正箇所ハイライト（レビュー用）
+   確定後は、この CSS ブロックと本文中の class="chg" / "chg-sec" を
+   まとめて削除すれば、通常表示に戻ります。
+   ============================================================ */
+.chg{color:#e0332a;}
+.chg-sec{color:#e0332a;}
+.checks-beige.chg li{color:#e0332a;}
+.profile-stats span.chg{background:#e0332a;color:#fff;}
+
+/* 収益の推移（新規セクション用） */
+.growth{margin:20px 0;padding:0;}
+.growth li{
+  list-style:none;display:flex;align-items:baseline;gap:12px;
+  border-bottom:1px solid #e7e7e7;padding:12px 2px;
+}
+.growth li:first-child{border-top:1px solid #e7e7e7;}
+.growth .m{flex:0 0 78px;font-size:14px;font-weight:700;color:#8a8a92;}
+.growth .v{font-size:21px;font-weight:900;line-height:1.4;font-variant-numeric:tabular-nums;}
+.growth .v small{display:block;font-size:12.5px;font-weight:700;color:#8a8a92;letter-spacing:0;}
 </style>
 </head>
 <body>
@@ -513,7 +534,43 @@ details .a::before{
     <li>高い再現性</li><li>仕入れなし</li><li>在庫なし</li><li>驚異的な利益率</li><li>時間と場所に縛られない</li>
   </ul>
 
+  <p class="chg" style="margin-top:22px;">ただ、私がこれを選んだ本当の理由は、利益率でも在庫がないことでもありません。<br>家族との時間を削らずに続けられたから、それだけです。</p>
+
   <p style="margin-top:22px;">7回外した私が、8個目にしてようやく行き着いた答えでした。</p>
+</section>
+
+<!-- ================= §7.5 8個目で何をしたのか（新規） ================= -->
+<section class="sec pt0 chg-sec">
+  <h2 class="h2">7回外した私が、<br>8個目で何をしたのか</h2>
+
+  <p>人の実績を並べる前に、まず私の話をさせてください。</p>
+
+  <p>私は、銀行員でした。10年勤めて、月収20万円。<br>残業は月80時間、残業代は出ませんでした。<br>10年上の先輩の給料を知って、<b>「頑張っても、こんなに変わらないのか」</b>と気づいてしまった。あの日から、頑張る理由がわからなくなりました。</p>
+
+  <p>先に言っておくと、<b>私は投資系の副業で90万円の借金をつくっています。</b><br>古着の物販では、家の一部屋が売れ残りの服で埋まり、妻に「もう限界」と本気で怒られました。</p>
+
+  <p>家族のために始めた副業で、家族を苦しめていた。<br><b>離婚されても仕方ないと、本気で思っていました。</b></p>
+
+  <p>転機は、<span class="hl">「一度出したものが、自分が寝ているあいだも働き続ける」</span><br>という考え方を知ったことです。</p>
+
+  <p>「何もしなければ、5年後も10年後も同じ生活だ」<br>失敗より、<b>変わらないことのほうが怖くなりました。</b></p>
+
+  <p>使ったのは、通勤電車と、昼休みと、寝る前の布団の中だけです。<br>もともとSNSを眺めて終わっていた時間の、使い方を変えただけでした。</p>
+
+  <ul class="growth">
+    <li><span class="m">初月</span><span class="v">数百円〜数千円</span></li>
+    <li><span class="m">2か月目</span><span class="v">368,400円<small>本業を超える</small></span></li>
+    <li><span class="m">3か月目</span><span class="v">853,700円</span></li>
+    <li><span class="m">4か月目</span><span class="v">1,207,000円</span></li>
+  </ul>
+
+  <p>最初の数百円が出たとき、<b>「え、本当に売れた！？」</b>と何度も画面を見返しました。<br>月100万より、この数百円のほうが大きかった。<span class="hl">仕組みが本当に動くと、体でわかった</span>からです。</p>
+
+  <p>そしてこのとき、<b>私のフォロワーは、まだ100人台でした。</b><br>効いていたのは数ではなく、<b>どこで発信するか</b>のほうでした。</p>
+
+  <p>7回外したのも、8個目で変わったのも、原因は同じです。<br><b>選ぶ場所を、間違えていただけでした。</b></p>
+
+  <p class="disclaimer" style="border-top:0;padding-top:0;">※記載の数値は私個人の実績であり、成果を保証するものではありません。効果には個人差があります。</p>
 </section>
 
 <!-- ================= §8 競合反論 ================= -->
@@ -555,7 +612,7 @@ details .a::before{
   <div class="box-line">
     <p style="font-weight:900;margin:0;">大事なのは、誰よりも早く始めることではありません。<br>まだ誰も取っていない場所を選ぶことです。</p>
   </div>
-  <p>そして、その<span class="hl">「選び方」</span>こそが、<br>私が174人に伝えてきた中で、一番結果に直結した部分でした。</p>
+  <p>そして、その<span class="hl">「選び方」</span>こそが、<br><span class="chg">同じやり方で月30万を超えた174人が、そろって最初に手をつけていたこと</span>でした。</p>
 </section>
 
 <!-- ================= §9 フロー型とストック型 ================= -->
@@ -567,7 +624,7 @@ details .a::before{
   <div class="figure" style="margin-top:0;"><img src="images/flow_stock.jpg" alt="流れて消える水と積み上がるブロックの対比スケッチ" width="750" height="750"></div>
 
   <p style="font-weight:700;">アカウントが育って、反応の取れる投稿の型が1つ決まってしまえば、<br>あとはその型を回していくだけの作業になります。</p>
-  <p>174人以上で再現性がとれているのでこれをやれば間違いないという型です。</p>
+  <p class="chg">同じ型で結果を出した人が、174人以上います。<br>才能のある誰か一人の話ではない、というのがこの数字の意味です。</p>
   <p style="font-weight:700;">家にいながらスマホだけで完結するので、<br>時間の取りにくい会社員の方や、子育て中の方にこそ向いています。</p>
   <p>子どもの寝かしつけが終わった数時間でもアカウントを育てておけば、<br><span class="hl">それが毎月の収入源として残り続ける</span></p>
 
@@ -638,19 +695,20 @@ details .a::before{
 <section class="sec pt0">
   <h2 class="h2">インスタ×アフィリエイトを<br>始めた先の未来は・・・？</h2>
   <div class="figure"><img src="images/future_bright.jpg" alt="買い物と旅行を楽しむ夫婦のスケッチ" width="750" height="750"></div>
-  <p>ここまで、失敗の話ばかりしてきました。</p>
-  <p>なので、<b>その先の話</b>もさせてください。</p>
-  <ul class="checks-beige">
-    <li>お財布の中身を気にしないで買い物も楽しく</li>
-    <li>会社員では味わえないワクワク感のある毎日</li>
-    <li>場所や時間に関係なく成果を生み出す</li>
-    <li>愚痴ばかりの会社の人間関係から脱出</li>
-    <li>必勝パターンを身につけライバルを置き去りに</li>
+  <p class="chg">ここまで、私が転ぶところから立て直すまでの話をしてきました。</p>
+  <p class="chg">なので今度は、<b>これから始める方の話</b>をさせてください。</p>
+  <ul class="checks-beige chg">
+    <li>コンビニで飲み物を買うとき、値段を見なくなる</li>
+    <li>子どもの「やりたい」に、「今は無理」と言わずに済む</li>
+    <li>自分の発信が誰かの役に立っていると実感できて、自己肯定感が上がる</li>
+    <li>後輩に「ここは出すよ」と言える。損得を気にせず人にお金を使える</li>
+    <li>朝が、「今日も仕事か」で始まらなくなる</li>
+    <li>家に帰ってまで、嫌いな上司のことを考えなくてよくなる</li>
   </ul>
   <p style="margin-top:22px;">正直に言うと、私はここに書いたことを<br><b>7回すべっていた頃、1つも信じていませんでした。</b></p>
   <p>「どうせ一部の人の話だろう」と決めつけていました。</p>
   <p><span class="hl">でも今、同じことを言う人が、私のまわりに174人以上います。</span></p>
-  <p class="center" style="font-weight:900;font-size:18px;margin-top:24px;">実際に、こういう方たちの<br>背中を押してきました。</p>
+  <p class="center chg" style="font-weight:900;font-size:18px;margin-top:24px;">実際に、私と同じやり方で始めた方から、<br>こんな声が届いています。</p>
 </section>
 
 <!-- ================= §14 お客様の声 ================= -->
@@ -658,21 +716,6 @@ details .a::before{
   <div class="voices-head">
     <div class="big">うれしい報告が、<br>毎日のように届いています</div>
     <div class="small">実際に取り組んだ方の声を、<br>そのまま紹介させてください</div>
-  </div>
-
-  <div class="voice-card">
-    <div class="voice-head">
-      <img class="voice-ico" src="images/voice/akihon.jpg" alt="あきほんさん" width="240" height="240">
-      <div>
-        <div class="voice-name">あきほんさん</div>
-        <div class="voice-attr">収入0主婦</div>
-      </div>
-    </div>
-    <div class="voice-title">好きな占いジャンルで4か月で夫の収入超え！</div>
-    <p class="voice-body">障害のある子どもがいたので働きに出るのが難しかったのですが、どうしてももう少し家計を安定させたくて、物販、ブログ、アフィリエイト、いろんな副業に挑戦しましたがどれも上手くいかず。せいぜい月500円で自信を無くしかけてましたが、これが最後と思ってインスタに挑戦しました。</p>
-    <p class="voice-body">占いと最近はやりのAIを組み合わせた投稿をしたらまさかの大反響。まさかの4か月目で夫の収入を超えることができました。</p>
-    <p class="voice-body">前は何のスキルもないただの主婦、でも今は自分の発信が誰かの役に立っていると感じられて、自己肯定感がすごく上がりました。</p>
-    <p class="disclaimer">※効果には個人差があります。収益を保証するものではありません。</p>
   </div>
 
   <div class="voice-card">
@@ -799,16 +842,16 @@ details .a::before{
   <div class="figure" style="margin-top:0;"><img src="images/jun_profile.jpg" alt="じゅんさんのポートレートスケッチ" width="750" height="750"></div>
   <p class="profile-name">じゅん</p>
   <div class="profile-stats">
-    <span>フォロワー20万</span><span>月120万円</span><span>指導400名</span><span>174人輩出</span>
+    <span>フォロワー20万</span><span>月120万円</span><span class="chg">月30万超え174人</span>
   </div>
-  <p>インスタグラム×アフィリエイトの攻略情報を発信。<br>現在は<b>フォロワー約20万人、月120万円</b>を達成し、いまも数字を伸ばし続けている。<br>自分と同じところでつまずく人を減らすためにノウハウを公開し、<br>これまでに<b>400名を超える指導実績</b>をもつ。<br><b>月30万円を超えるプレイヤーを174人以上輩出。</b></p>
+  <p class="chg">インスタグラム×アフィリエイトの攻略情報を発信。<br>もともとは<b>月80時間のサービス残業</b>を強いられ月収は20万。<br><b>副業詐欺にあい90万円の借金</b>を背負うが、インスタアフィリエイトに出会い、<br>現在は<b>フォロワー約20万人、月120万円</b>を達成し、いまも数字を伸ばし続けている。<br>自分と同じところでつまずく人を減らすためにノウハウを公開中。</p>
 
   <p style="margin-top:26px;">私が一番うれしいのは、フォロワーの数でも、月の売上でもありません。</p>
-  <p><span class="hl">私と同じやり方で、174人が月30万を超えたこと</span>です。</p>
+  <p><span class="hl chg">私が使ったのと同じ手順で、174人が月30万を超えていること</span>です。</p>
   <p>一人だけ跳ねたなら、それは運か、その人の才能で説明がつきます。<br>でも174人が同じ順番でたどり着いているなら、<br><b>手順のほうが正しい</b>と考えるのが自然だと思っています。</p>
 
   <div class="box-soft">
-    <p style="margin:0;">安い時給で、長く拘束される。<br>その働き方は、変えられます。<br>SNS1つで、私の生活は実際に変わりました。<br><b>「あの人だからできた」ではなく「あなたでも可能」な<br>ノウハウを確立しました。</b><br>ぜひ受け取ってみてください。</p>
+    <p style="margin:0;">安い時給で、長く拘束される。<br>その働き方は、変えられます。<br>SNS1つで、私の生活は実際に変わりました。<br><b class="chg">「あの人だからできた」で終わらせないために、<br>自分がたどった順番をそのまま手順の形にまとめました。</b><br>ぜひ受け取ってみてください。</p>
   </div>
 </section>
 
@@ -819,7 +862,7 @@ details .a::before{
 
   <details>
     <summary>何もスキルのない初心者でも取り組めますか？</summary>
-    <div class="a">取り組めます。私自身、少し前まではSNSをただ眺めているだけの人間でした。知識ゼロの状態から始めて、ここまで数字を作れています。はじめての方でも遠回りせずに成果へ向かえるよう、特典とサポートを用意しているので、遠慮なく使い倒してください。</div>
+    <div class="a">取り組めます。私自身、少し前まではSNSをただ眺めているだけの人間でした。知識ゼロの状態から始めて、ここまで数字を作れています。はじめての方でも遠回りせずに成果へ向かえるよう、<span class="chg">手順と特典</span>を用意しているので、遠慮なく使い倒してください。</div>
   </details>
   <details>
     <summary>なんで無料で配っているのですか？</summary>
