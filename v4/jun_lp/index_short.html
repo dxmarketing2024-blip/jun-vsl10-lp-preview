@@ -1,0 +1,348 @@
+<!DOCTYPE html><html lang="ja"><head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>ご案内</title>
+<meta name="robots" content="noindex,nofollow,noarchive,nosnippet">
+<style>
+/* ============ base ============ */
+:root{
+  --navy:#3d4a8c;
+  --navy-d:#333f78;
+  --green:#2fa04e;
+  --green-d:#268742;
+  --ink:#232323;
+  --ink-soft:#4a4a4a;
+  --hl:#ffef62;
+  --red:#d5342b;
+  --blue:#1a4fd0;
+  --brown:#8a5a2b;
+  --paper:#fbf6ec;
+  --gray:#f0f0f0;
+  --line:#dcdcdc;
+}
+*{box-sizing:border-box;-webkit-text-size-adjust:100%;}
+html,body{margin:0;padding:0;}
+body{
+  font-family:"Hiragino Kaku Gothic ProN","Hiragino Sans","Noto Sans JP","Yu Gothic",YuGothic,Meiryo,sans-serif;
+  color:var(--ink);
+  background:#e9e9ec;
+  font-size:17px;
+  line-height:1.95;
+  letter-spacing:.01em;
+  -webkit-font-smoothing:antialiased;
+}
+img{max-width:100%;height:auto;display:block;border:0;}
+a{color:var(--blue);}
+
+.wrap{
+  max-width:500px;margin:0 auto;background:#fff;overflow:hidden;
+  box-shadow:0 0 24px rgba(0,0,0,.08);padding-bottom:132px;
+}
+
+/* ============ blocks ============ */
+.sec{padding:34px 20px;}
+.sec.pt0{padding-top:0;}
+p{margin:0 0 1.25em;}
+p:last-child{margin-bottom:0;}
+.center{text-align:center;}
+b,strong{font-weight:700;}
+
+.hl{background:linear-gradient(transparent 58%, var(--hl) 58%);font-weight:700;padding:0 .05em;}
+.blue{color:var(--blue);font-weight:700;}
+.red{color:var(--red);font-weight:700;}
+.brown{color:var(--brown);font-weight:700;}
+.navy{color:var(--navy);font-weight:700;}
+.nb{white-space:nowrap;}
+
+.h2{font-size:23px;line-height:1.5;font-weight:900;text-align:center;margin:0 0 22px;letter-spacing:-.01em;}
+.h3{font-size:19px;line-height:1.6;font-weight:900;margin:0 0 14px;}
+.kicker{font-size:15px;font-weight:700;color:var(--navy);text-align:center;margin:0 0 6px;}
+
+/* ============ FV ============ */
+.fv{background:var(--paper);padding:26px 20px 0;}
+.fv-copy{text-align:center;font-weight:900;color:var(--navy);letter-spacing:-.02em;}
+.fv-copy .l1{display:block;font-size:23px;line-height:1.4;}
+.fv-copy .num{display:block;font-size:86px;line-height:1.02;margin:2px 0 0;letter-spacing:-.04em;}
+.fv-copy .num small{font-size:40px;letter-spacing:0;}
+.fv-copy .l3{display:block;font-size:25px;line-height:1.4;margin-top:2px;}
+.fv-img{margin:10px -20px 0;}
+.fv-sub{
+  background:var(--navy);color:#fff;text-align:center;font-weight:700;
+  font-size:15px;line-height:1.7;padding:13px 10px;margin:0 -20px;
+}
+.fv-sub b{font-size:17px;}
+
+.figure{position:relative;margin:20px 0;}
+.figure img{border-radius:4px;}
+
+/* numbered cards */
+.num-card{display:flex;gap:12px;margin:0 0 18px;}
+.num-card .n{
+  flex:0 0 34px;height:34px;border-radius:50%;background:var(--navy);color:#fff;
+  font-weight:900;font-size:18px;display:flex;align-items:center;justify-content:center;margin-top:3px;
+}
+.num-card .t{font-weight:700;line-height:1.8;}
+.num-card .t small{display:block;font-size:14px;font-weight:700;color:#8a8a92;line-height:1.7;}
+
+/* failure list */
+.fail{border-bottom:1px dashed var(--line);padding:18px 0;}
+.fail:first-of-type{border-top:1px dashed var(--line);}
+.fail h4{
+  margin:0 0 6px;font-size:18px;font-weight:900;color:var(--ink);
+  display:flex;align-items:baseline;gap:9px;
+}
+.fail h4 .x{color:var(--red);font-size:20px;font-weight:900;}
+.fail p{margin:0;font-size:16px;line-height:1.85;color:var(--ink-soft);}
+
+/* boxes */
+.box-soft{background:var(--paper);border-radius:6px;padding:20px 18px;margin:22px 0;}
+.box-line{border:2px solid var(--navy);border-radius:8px;padding:18px 16px;margin:22px 0;}
+
+.statement{text-align:center;font-size:24px;line-height:1.55;font-weight:900;margin:26px 0;letter-spacing:-.01em;}
+.product-name{text-align:center;font-size:34px;line-height:1.3;font-weight:900;color:var(--navy);margin:14px 0;letter-spacing:-.02em;}
+
+.merits{display:flex;flex-wrap:wrap;gap:8px;justify-content:center;margin:20px 0 4px;padding:0;}
+.merits li{list-style:none;background:var(--navy);color:#fff;font-size:14.5px;font-weight:700;padding:7px 13px;border-radius:99px;}
+
+/* checklists */
+.checks{margin:18px 0;padding:0;}
+.checks li{
+  list-style:none;display:flex;gap:11px;align-items:flex-start;
+  border-bottom:1px solid #e7e7e7;padding:13px 2px;
+  font-weight:700;font-size:16px;line-height:1.75;
+}
+.checks li:first-child{border-top:1px solid #e7e7e7;}
+.checks li::before{content:"✓";color:var(--green);font-weight:900;font-size:18px;line-height:1.6;}
+
+.checks-beige{margin:18px 0;padding:0;}
+.checks-beige li{
+  list-style:none;display:flex;gap:11px;align-items:flex-start;
+  background:#f8f1e4;border:1px solid #efe3cf;border-radius:10px;
+  padding:13px 15px;margin-bottom:10px;
+  font-weight:700;font-size:16px;line-height:1.75;color:#6a5a45;
+}
+.checks-beige li::before{content:"✓";color:#c8a15e;font-weight:900;font-size:18px;line-height:1.6;}
+
+.apology{text-align:center;font-size:25px;line-height:1.5;font-weight:900;margin:30px 0 6px;}
+
+/* CTA */
+.cta{margin:26px 0 6px;}
+.cta .ribbon{text-align:center;font-size:16px;font-weight:700;color:var(--ink);margin-bottom:10px;line-height:1.7;}
+.cta .ribbon b{color:var(--red);font-size:18px;}
+.cta-btn{
+  display:block;background:var(--green);color:#fff;text-decoration:none;text-align:center;
+  font-size:21px;font-weight:900;line-height:1.45;padding:18px 12px;border-radius:8px;
+  box-shadow:0 4px 0 var(--green-d);letter-spacing:.01em;
+}
+.cta-btn:active{animation:none;transform:scale(.98) translateY(2px);box-shadow:0 1px 0 var(--green-d);}
+.cta .note{text-align:center;font-size:14px;color:#6f6f76;margin:9px 0 0;line-height:1.6;}
+
+/* CTA attention pulse (zoom in / out) */
+@keyframes ctaPulse{
+  0%,100%{transform:scale(1);}
+  50%{transform:scale(1.05);}
+}
+@keyframes ctaPulseSoft{
+  0%,100%{transform:scale(1);}
+  50%{transform:scale(1.035);}
+}
+.cta-btn{
+  transform-origin:center;
+  animation:ctaPulse 1.15s ease-in-out infinite;
+  will-change:transform;
+}
+.sticky a{
+  transform-origin:center;
+  animation:ctaPulseSoft 1.35s ease-in-out infinite;
+  will-change:transform;
+}
+.sticky a:active{animation:none;transform:scale(.98) translateY(2px);box-shadow:0 1px 0 var(--green-d);}
+@media (prefers-reduced-motion: reduce){
+  .cta-btn,.sticky a{animation:none;}
+}
+
+/* voices */
+.voices-head{text-align:center;margin:8px 0 22px;}
+.voices-head .big{font-size:23px;font-weight:900;color:var(--navy);line-height:1.45;}
+.voices-head .small{font-size:16px;color:var(--navy);line-height:1.7;}
+
+.voice-card{
+  border:1px solid #e3e3e8;border-radius:12px;padding:18px 16px;margin-bottom:16px;
+  background:#fff;box-shadow:0 2px 8px rgba(0,0,0,.04);
+}
+.voice-head{display:flex;align-items:center;gap:12px;margin-bottom:12px;}
+.voice-ico{width:56px;height:56px;border-radius:50%;object-fit:cover;flex:0 0 56px;border:2px solid #eee;}
+.voice-name{font-size:17px;font-weight:900;line-height:1.4;}
+.voice-attr{font-size:14px;font-weight:700;color:#8a8a92;line-height:1.4;}
+.voice-title{
+  font-size:18px;font-weight:900;line-height:1.55;color:var(--navy);
+  border-left:4px solid var(--navy);padding-left:11px;margin-bottom:12px;
+}
+.voice-body{font-size:16px;line-height:1.9;margin:0;color:#333;}
+.voice-body + .voice-body{margin-top:1em;}
+.disclaimer{
+  font-size:14px;line-height:1.7;color:#8b8b93;font-weight:400;
+  margin:14px 0 0;padding-top:10px;border-top:1px dashed #e8e8ec;
+}
+
+.voice-mini{display:flex;align-items:center;gap:12px;border-bottom:1px solid #ececf0;padding:14px 2px;}
+.voice-mini:first-of-type{border-top:1px solid #ececf0;}
+.voice-mini img{width:46px;height:46px;border-radius:50%;object-fit:cover;flex:0 0 46px;border:2px solid #eee;}
+.voice-mini .n{font-size:15px;font-weight:900;line-height:1.5;}
+.voice-mini .n span{font-size:14px;font-weight:700;color:#8a8a92;margin-left:6px;}
+.voice-mini .t{font-size:16px;font-weight:900;line-height:1.6;color:var(--navy);}
+.mini-note{font-size:14px;line-height:1.7;color:#8b8b93;margin:12px 0 0;}
+
+/* profile */
+.profile-name{text-align:center;font-size:26px;font-weight:900;margin:16px 0 4px;}
+.profile-stats{display:flex;flex-wrap:wrap;gap:7px;justify-content:center;margin:12px 0 18px;}
+.profile-stats span{background:var(--navy);color:#fff;font-size:14px;font-weight:700;padding:6px 12px;border-radius:99px;}
+
+/* final offer */
+.offer-cond{
+  display:inline-block;background:var(--navy);color:#fff;
+  font-size:14.5px;font-weight:700;line-height:1.5;letter-spacing:.01em;
+  padding:8px 16px;border-radius:99px;margin:0 0 12px;
+}
+.offer-benefit{text-align:center;font-size:21px;font-weight:900;line-height:1.45;color:var(--ink);margin:0 0 6px;letter-spacing:-.01em;}
+.offer-benefit em{font-style:normal;color:var(--red);font-size:29px;padding:0 .04em;letter-spacing:-.02em;}
+.final-title{
+  text-align:center;font-size:22px;font-weight:900;line-height:1.5;
+  color:var(--navy);margin:8px 0 4px;letter-spacing:-.035em;
+}
+.final-title .lg{display:block;font-size:30px;line-height:1.35;margin-top:2px;letter-spacing:-.02em;}
+
+.footer{text-align:center;padding:26px 20px 34px;font-size:14px;color:#888;}
+.footer a{color:var(--blue);text-decoration:none;}
+
+/* sticky CTA */
+.sticky{
+  position:fixed;left:0;right:0;bottom:0;z-index:50;
+  background:rgba(255,255,255,.97);border-top:1px solid var(--line);
+  padding:9px 12px calc(9px + env(safe-area-inset-bottom));
+  box-shadow:0 -4px 16px rgba(0,0,0,.10);
+  transform:translateY(115%);transition:transform .28s ease;
+}
+.sticky.is-on{transform:translateY(0);}
+.sticky-inner{max-width:500px;margin:0 auto;}
+.sticky .t{text-align:center;font-size:14px;font-weight:700;color:var(--ink);margin-bottom:5px;}
+.sticky .t b{color:var(--red);}
+.sticky a{
+  display:block;background:var(--green);color:#fff;text-decoration:none;text-align:center;
+  font-size:18px;font-weight:900;padding:13px 10px;border-radius:8px;box-shadow:0 3px 0 var(--green-d);
+}
+
+@media (max-width:360px){
+  body{font-size:16px;}
+  .fv-copy .num{font-size:72px;}
+  .h2{font-size:21px;}
+  .product-name{font-size:29px;}
+  .offer-cond{font-size:14px;padding:8px 12px;}
+  .offer-benefit{font-size:19px;}
+  .offer-benefit em{font-size:26px;}
+  .final-title{font-size:20px;}
+  .final-title .lg{font-size:27px;}
+}
+
+/* 収益の推移（新規セクション用） */
+.growth{margin:20px 0;padding:0;}
+.growth li{
+  list-style:none;display:flex;align-items:baseline;gap:12px;
+  border-bottom:1px solid #e7e7e7;padding:12px 2px;
+}
+.growth li:first-child{border-top:1px solid #e7e7e7;}
+.growth .m{flex:0 0 86px;font-size:15px;font-weight:700;color:#8a8a92;}
+.growth .v{color:var(--red);font-size:21px;font-weight:900;line-height:1.4;font-variant-numeric:tabular-nums;}
+.growth .v small{display:block;font-size:14px;font-weight:700;color:#8a8a92;letter-spacing:0;}
+
+/* しんどかったことリスト（新規セクション用） */
+.pains{margin:14px 0 20px;padding:0;list-style:none;}
+.pains li{position:relative;padding:8px 0 8px 22px;font-weight:700;}
+.pains li::before{content:"";position:absolute;left:2px;top:18px;width:10px;height:2px;background:currentColor;opacity:.55;}
+
+/* ===== image-LP overrides ===== */
+img.blk{display:block;width:100%;height:auto;}
+img.blk-sticky{width:auto;max-width:100%;margin-left:auto;margin-right:auto;}
+
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<img src="img_blocks/s_00.webp" alt="" width="390" height="640" decoding="async" class="blk" style="margin-top: 0px; margin-bottom: 0px;">
+
+<img src="img_blocks/s_01.webp" alt="" width="390" height="564" decoding="async" class="blk" style="margin-top: 0px; margin-bottom: 0px;">
+
+<img src="img_blocks/s_02a.webp" alt="" width="390" height="612" loading="lazy" decoding="async" class="blk" style="margin-top: 0px;"><img src="img_blocks/s_02b.webp" alt="" width="390" height="622" loading="lazy" decoding="async" class="blk"><img src="img_blocks/s_02c.webp" alt="" width="390" height="617" loading="lazy" decoding="async" class="blk"><img src="img_blocks/s_02d.webp" alt="" width="390" height="617" loading="lazy" decoding="async" class="blk" style="margin-bottom: 0px;">
+
+<img src="img_blocks/s_03a.webp" alt="" width="390" height="676" loading="lazy" decoding="async" class="blk" style="margin-top: 0px;"><img src="img_blocks/s_03b.webp" alt="" width="390" height="676" loading="lazy" decoding="async" class="blk" style="margin-bottom: 0px;">
+
+<img src="img_blocks/s_04a.webp" alt="" width="390" height="773" loading="lazy" decoding="async" class="blk" style="margin-top: 0px;"><img src="img_blocks/s_04b.webp" alt="" width="390" height="765" loading="lazy" decoding="async" class="blk"><img src="img_blocks/s_04c.webp" alt="" width="390" height="764" loading="lazy" decoding="async" class="blk"><img src="img_blocks/s_04d.webp" alt="" width="390" height="779" loading="lazy" decoding="async" class="blk" style="margin-bottom: 0px;">
+
+<img src="img_blocks/s_05a.webp" alt="" width="390" height="748" loading="lazy" decoding="async" class="blk" style="margin-top: 0px;"><img src="img_blocks/s_05b.webp" alt="" width="390" height="654" loading="lazy" decoding="async" class="blk" style="margin-bottom: 0px;">
+
+<img src="img_blocks/s_06a.webp" alt="" width="390" height="444" loading="lazy" decoding="async" class="blk" style="margin-top: 0px;"><img src="img_blocks/s_06b.webp" alt="" width="390" height="444" loading="lazy" decoding="async" class="blk" style="margin-bottom: 0px;">
+
+<section class="sec pt0">
+  <img src="img_blocks/s_07.webp" alt="" width="350" height="68" loading="lazy" decoding="async" class="blk" style="margin-top: 0px; margin-bottom: 21.25px;">
+
+  <div class="cta">
+    <img src="img_blocks/s_08.webp" alt="" width="350" height="31" loading="lazy" decoding="async" class="blk" style="margin-top: 0px; margin-bottom: 10px;">
+<a class="cta-btn" href="#line">LINEを追加して<br>今すぐ無料で手に入れる</a>
+    <img src="img_blocks/s_09.webp" alt="" width="350" height="23" loading="lazy" decoding="async" class="blk" style="margin-top: 9px; margin-bottom: 0px;">
+  </div>
+
+  <img src="img_blocks/s_10.webp" alt="" width="350" height="378" loading="lazy" decoding="async" class="blk" style="margin-top: 0px; margin-bottom: 0px;">
+  
+</section>
+
+<img src="img_blocks/s_11a.webp" alt="" width="390" height="739" loading="lazy" decoding="async" class="blk" style="margin-top: 0px;"><img src="img_blocks/s_11b.webp" alt="" width="390" height="740" loading="lazy" decoding="async" class="blk" style="margin-bottom: 0px;">
+
+<img src="img_blocks/s_12a.webp" alt="" width="390" height="575" loading="lazy" decoding="async" class="blk" style="margin-top: 0px;"><img src="img_blocks/s_12b.webp" alt="" width="390" height="1330" loading="lazy" decoding="async" class="blk"><img src="img_blocks/s_12c.webp" alt="" width="390" height="632" loading="lazy" decoding="async" class="blk" style="margin-bottom: 0px;">
+
+<img src="img_blocks/s_13a.webp" alt="" width="390" height="613" loading="lazy" decoding="async" class="blk" style="margin-top: 0px;"><img src="img_blocks/s_13b.webp" alt="" width="390" height="623" loading="lazy" decoding="async" class="blk" style="margin-bottom: 0px;">
+
+<img src="img_blocks/s_14.webp" alt="" width="390" height="794" loading="lazy" decoding="async" class="blk" style="margin-top: 0px; margin-bottom: 0px;">
+
+<section class="sec pt0">
+  <img src="img_blocks/s_15.webp" alt="" width="350" height="562" loading="lazy" decoding="async" class="blk" style="margin-top: 0px; margin-bottom: 0px;">
+  
+  
+
+  
+
+  <div class="cta">
+    <img src="img_blocks/s_16.webp" alt="" width="350" height="32" loading="lazy" decoding="async" class="blk" style="margin-top: 0px; margin-bottom: 10px;">
+    <a class="cta-btn" href="#line">LINEを追加して<br>今すぐ無料で手に入れる</a>
+    <img src="img_blocks/s_17.webp" alt="" width="350" height="23" loading="lazy" decoding="async" class="blk" style="margin-top: 9px; margin-bottom: 0px;">
+  </div>
+</section>
+
+<footer class="footer">
+  <a href="#tokushoho">特定商取引法に基づく表記</a>｜<a href="#privacy">プライバシーポリシー</a>
+</footer>
+
+</div><div class="sticky" style="">
+  <div class="sticky-inner">
+    <img src="img_blocks/s_18.webp" alt="" width="366" height="28" loading="lazy" decoding="async" class="blk blk-sticky" style="margin-top: 0px; margin-bottom: 5px;">
+    <a href="#line">LINEを追加して今すぐ無料で手に入れる</a>
+  </div>
+</div>
+
+<script>
+// Reveal the sticky CTA only after the reader has left the first view.
+(function () {
+  var bar = document.querySelector('.sticky');
+  var on = false;
+  function update() {
+    var should = window.scrollY > 620;
+    if (should !== on) { on = should; bar.classList.toggle('is-on', on); }
+  }
+  window.addEventListener('scroll', update, { passive: true });
+  update();
+})();
+</script>
+
+
+
+</body></html>
