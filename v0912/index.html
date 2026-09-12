@@ -48,9 +48,11 @@ td{font-weight:900;text-align:right;}
 
   <h2>① 画像LP版<span>審査対策版／サーバー設置しているのはこちら</span></h2>
   <div class="card">
-    <a class="btn" href="jun_lp_image/index.html">ロング版を見る<small>本文すべて画像化</small></a>
-    <a class="btn" href="jun_lp_image/index_short.html">ショート版を見る<small>本文すべて画像化</small></a>
-    <p class="note">HTMLから訴求テキストを読み取れない版です。<b>画像だけ差し替えれば今回の文字サイズ変更が反映されます。</b></p>
+    <a class="btn" href="jun_lp_image/index_short.html">ショート版を見る<small>文字サイズ修正ずみ ✔</small></a>
+    <a class="btn alt" href="jun_lp_image/index.html">ロング版を見る<small>※まだ修正前（文字が小さいまま）</small></a>
+    <p class="note"><b>まずショート版をご確認ください。</b><br>
+      画像LPは390px幅で作り直し、テキスト版と同じ本文17px相当で表示されるようにしました。<br>
+      ロング版はショート版のサイズ感が確定してから同じ設定で作り直します。</p>
   </div>
 
   <h2>② テキストLP版<span>編集の元データ／文字がコピーできる版</span></h2>
@@ -73,6 +75,12 @@ td{font-weight:900;text-align:right;}
     </table>
     <p class="note">14px未満だった箇所<span class="badge">12種</span>→<span class="badge">0種</span><br>
     横スクロールの発生も0pxで確認済みです。</p>
+    <table style="margin-top:16px;">
+      <tr><th colspan="2" style="color:var(--navy);font-weight:900;padding-top:10px;">画像LPで文字が小さかった原因</th></tr>
+      <tr><th>修正前：500px幅で画像化</th><td style="color:#d5342b;">実効 13.3px</td></tr>
+      <tr><th>修正後：390px幅で画像化</th><td style="color:#2fa04e;">実効 17.0px</td></tr>
+    </table>
+    <p class="note">端末幅より広い500pxで画像を作っていたため、表示時に78%へ縮小されていました。</p>
   </div>
 
   <p class="foot">このページはローカル確認用です。<br>PCの電源が入っている間だけ表示できます。</p>
